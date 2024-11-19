@@ -22,10 +22,10 @@ add the ReentrancyGuard from OppenZeppelin.
 -To get this all running the steps are as followed:
 
 1. Start IDE
-2. npm install --save-dev hardhat
-3. npx hardhat
-4. npm install --save-dev dotenv (is needed for the .env file, which gets ignored by uploading to GitHub)
-5. setting up your .env with RPC_URL, PRIVATE_KEY, ETHERSCAN_KEY
+2. `npm install --save-dev hardhat`
+3. `npx hardhat`
+4. `npm install --save-dev dotenv` (is needed for the .env file, which gets ignored by uploading to GitHub)
+5. setting up your .env with `RPC_URL` and `PRIVATE_KEY`
 6. adding in you hardhat.config.js file => require("dotenv").config();
 7. @nomicfoundation/hardhat-toolbox
 8. @openzeppelin/contracts
