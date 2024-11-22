@@ -71,6 +71,7 @@ describe('Custom_Wallet', function (){
             const contractBalance = await hre.ethers.provider.getBalance(contractAdress);
             expect(EthAmount.toString()).to.equal((await contractBalance).toString());
 
+            
             // Withdraw ETH
             const contractBalanceBefore = await hre.ethers.provider.getBalance(contractAdress);
             await contract.connect(owner).withdrawETH(EthAmount);

@@ -37,7 +37,7 @@ contract Custom_Wallet is Ownable {
 
 
 
-            // Swap ETH in Tokens
+            
     function swapETHForTokens(address _tokenOut, uint _amountIn) external payable onlyOwner {
         require(address(this).balance >= _amountIn, "Not enough ETH in contract to perform this swap");
         uint amountOutMin = getAmountOut(_amountIn, _tokenOut, SwapDirection.Weth_to_Tokens);
@@ -50,10 +50,10 @@ contract Custom_Wallet is Ownable {
             amountOutMin,
             path,
             address(this),
-            block.timestamp + 120 //  Transaction must be done in 2 minutes.
+            block.timestamp + 120 
         );
     }
-            // Swap Token in ETH
+            
     function swapTokensforETH(address _tokenIn, uint _amountIn) external onlyOwner {
         require(getBalanceOfToken(_tokenIn) >= _amountIn, "Not enough of this token in contract to perform this swap");
         uint amountOutMin = getAmountOut(_amountIn, _tokenIn, SwapDirection.Tokens_to_Weth);
@@ -69,10 +69,10 @@ contract Custom_Wallet is Ownable {
             amountOutMin,
             path,
             address(this),
-            block.timestamp + 120 // Transaction must be done in 2 minutes.
+            block.timestamp + 120 
         );
     }
-        // To get the right amount out in which to swap is executed.
+        
     enum SwapDirection {Tokens_to_Weth, Weth_to_Tokens}
 
     function getAmountOut(uint amountIn, address _tokenIn, SwapDirection direction) internal view returns (uint amountOut) {

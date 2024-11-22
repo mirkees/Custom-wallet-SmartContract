@@ -132,9 +132,9 @@ expect(await contract.getBalanceETH()).to.equal(ethers.utils.parseEther("0.5"));
 
 Create a .env file for:
 
-- RPC_URL= <your rpc url>
-- PRIVATE_KEY= <your private key>
-- ETHERSCAN_KEY <your etherscan api key>
+- RPC_URL= `<your rpc url>`
+- PRIVATE_KEY= `<your private key>`
+- ETHERSCAN_KEY `<your etherscan api key>`
 
 5. Compile the contracts `npx hardhat compile`
 
