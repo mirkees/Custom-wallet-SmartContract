@@ -3,7 +3,7 @@
 
 This is Smart Contract is made by Christian Koch & Markus Elmenreich
 
-A practice smart contract replicating wallet functionality, built using the Hardhat framework. It includes features like ERC20 token swapping via Uniswap's UniswapV2Router02, ownership management with OpenZeppelin's Ownable, and verified deployment using Etherscan's API. Tested for functionality, it is intended for learning purposes and not deployed on mainnet. Improvements like adding OpenZeppelin's ReentrancyGuard are suggested. Use and deploy at your own risk.
+A practice smart contract replicating wallet functionality, built using the Hardhat framework. It includes features like ERC20 token swapping via Uniswap's `UniswapV2Router02`, ownership management with OpenZeppelin's `Ownable`, and verified deployment using Etherscan's API. Tested for functionality, it is intended for learning purposes and not deployed on mainnet. Improvements like adding OpenZeppelin's ReentrancyGuard are suggested. Use and deploy at your own risk.
 
 ## Overview
 
